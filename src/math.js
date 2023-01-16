@@ -77,10 +77,6 @@ function range(end, start = 0) {
     return Array.from(Array(end - start + 1).keys()).map(x => x + start);
 }
 exports.range = range;
-function range(end, start = 0) {
-    return Array.from(Array(end - start + 1).keys()).map(x => x + start);
-}
-exports.range = range;
 function max(first, ...rest) {
     return Math.max([first].push(...rest));
 }

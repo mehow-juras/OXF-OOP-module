@@ -8,18 +8,18 @@ export function largestSquare(x: number): number {
 
 export function fibRec(n: bigint): bigint {
     if (BigInt(n) < BigInt(0)){
-        throw RangeError
+        throw RangeError;
     }
 
     if (BigInt(n) < BigInt(2) ){
-        return BigInt(n)
+        return BigInt(n);
     }
     return fibRec(BigInt(n) - BigInt(1)) + fibRec(BigInt(n) - BigInt(2));
 }
 
 export function fib(n: bigint): bigint {
     if (BigInt(n) < BigInt(0)) {
-        throw RangeError
+        throw RangeError;
     }
     let total = 0;
     for (let i = 0; i <= Number(n); i++) {
@@ -52,14 +52,14 @@ export function printedFibRec(n: number, level = 0): number {
 export function sum(a: number[]): number {
     let sum = 0;
     for (const val of a) {
-        sum += val
+        sum += val;
     }
     return sum;
 }
 
 
 export function map(a: number[], f: (x: number) => number): number[]{
-    const newArray = []
+    const newArray = [];
     for (const val of a) {
         newArray.push(f(val));
     }
@@ -74,13 +74,8 @@ export function range(end: number, start = 0): number[]{
     return Array.from(Array(end - start + 1).keys()).map(x => x + start);
 }
 
-export function range(end: number, start = 0): number[]{
-    return Array.from(Array(end - start + 1).keys()).map(x => x + start);
-}
-
-
 export function max(first: number, ...rest: number[]): number{
-    return Math.max([first].push(...rest))
+    return Math.max([first].push(...rest));
 }
 
 

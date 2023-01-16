@@ -16,9 +16,9 @@ describe('Math functions test', () => {
     });
     describe('isPalindrome', () => {
         it('', async () => {
-            expect((0, math_1.isPalindrome)("yeeeboooooi")).toEqual(false);
-            expect((0, math_1.isPalindrome)("onno")).toEqual(true);
-            expect((0, math_1.isPalindrome)("ono")).toEqual(true);
+            expect((0, math_1.isPalindrome)('yeeeboooooi')).toEqual(false);
+            expect((0, math_1.isPalindrome)('onno')).toEqual(true);
+            expect((0, math_1.isPalindrome)('ono')).toEqual(true);
         });
     });
 });

@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const math_1 = require("./math");
-// printedFibRec(10)
 function moreThanTwo(n) {
     return n < 2;
 }
